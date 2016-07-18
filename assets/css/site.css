@@ -5,7 +5,7 @@
 */ 
 
 /**
-* Site headers
+* Site & module headers
 */
 .site-header
 {
@@ -58,6 +58,38 @@ i.today-icon
 	width:10px;
 	height:20px;
 }
+
+.graph-detail a.chart
+{
+	display:inline-block;
+	padding-top:20px;
+	padding-bottom:20px;
+	padding-left:10px;
+	padding-right: 10px;
+	color:rgb(191,41,41);
+}
+
+.graph-detail a.chart:hover
+{
+	color:#FFFFFF;
+	background:rgb(191,41,41);
+}
+
+.graph-detail a.list
+{
+	display:inline-block;
+	padding-top:20px;
+	padding-bottom:20px;
+	padding-left:10px;
+	padding-right: 10px;
+	color:rgb(191,41,41);
+}
+.graph-detail a.list:hover
+{
+	color:#FFFFFF;
+	background:rgb(191,41,41);
+}
+
 
 /**
 * Utility css classes (empty row etc)
