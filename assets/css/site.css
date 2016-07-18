@@ -103,7 +103,7 @@ i.today-icon
 .graph-detail
 {
 	font-family:'PT Sans', sans-serif;
-	font-size:1.5em;
+	font-size:3.5vh;
 	color:#000000;
 }
 
@@ -126,7 +126,25 @@ i.today-icon
 	font-weight: 700;
 }
 
+.table-detail th
+{
+	padding:5px;
+}
+
 .table-detail > table > tbody > tr
 {
 	border-bottom: 1px solid #E0E0E0;
+}
+
+.table-detail > table > tbody > tr > td.red
+{
+	color:rgb(255, 26, 26);
+	font-weight:700;
+}
+
+
+.selected-view
+{
+	background:rgb(191,41,41);
+	color:#FFFFFF !important;
 }

@@ -62,6 +62,10 @@ $('a.chart').on('click', function(event){
 
 	$toHide.hide();
 	$toShow.show();
+
+	// set class 'selected-view'
+	$element.parent().find('a.chart').addClass('selected-view');
+	$element.parent().find('a.list').removeClass('selected-view');
 })
 
 $('a.list').on('click', function(event){
@@ -74,4 +78,9 @@ $('a.list').on('click', function(event){
 
 	$toHide.hide();
 	$toShow.show();
+
+	// set class 'selected-view'
+	$element.parent().find('a.list').addClass('selected-view');
+	$element.parent().find('a.chart').removeClass('selected-view');
+
 });
