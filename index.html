@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+	<title>Metro dashboard</title>
+	<!-- Stylesheets -->
+	<!-- Bootstrap -->
+	<link rel='stylesheet' type='text/css' href='assets/css/bootstrap/bootstrap.min.css'>
+	<!-- Chartist -->
+	<link rel='stylesheet' type='text/css' href='assets/css/chartist/chartist.min.css'>
+	<!-- Google Webfonts -->
+	<link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=PT+Sans:400,700'>
+	<!-- Website CSS -->
+	<link rel='stylesheet' type='text/css' href='assets/css/site.css'>
+
+	<!-- Scripts -->
+	<!-- jQuer v2.0.0 -->
+	<script type='text/javascript' src="http://code.jquery.com/jquery-2.0.0.js"></script>
+	<!-- Bootstrap javascript -->
+	<script type='text/javascript' src="assets/js/bootstrap/bootstrap.min.js"></script>
+	<!-- Chartist -->
+	<script type='text/javascript' src="assets/js/chartist/chartist.min.js"></script>
+
+	<!-- Fontawesome -->
+	<script src="https://use.fontawesome.com/104088ff60.js"></script>
+</head>
+<body>
+	<!-- .container-fluid -->
+	<div class="container-fluid">
+		<!-- .row -->
+		<div class="row">
+			<!-- .col-md-12 -->
+			<div class="col-md-12 col-xs-12 col-lg-12 site-header">
+				<!-- .barometer-icon -->
+				<h1><i class="icon barometer-icon"></i>Spoorbarometer</h1>
+				<!-- /.barometer-icon -->
+			</div>
+			<!-- /.col-md-12 -->
+		</div>
+		<!-- /.row -->
+		<!-- .row -->
+		<div class="row">
+			<!-- .col-md-12 (filter header) -->
+			<div class="col-md-12 col-xs-12 col-lg-12 filter-header">
+				<!-- h2 'show statistics for' -->
+				<h2>
+					Toon statistieken voor 
+					<select name="filter-form">
+						<option value="today">vandaag</option>
+						<option value="week">afgelopen 7 dagen</option>
+						<option value="month">afgelopen maand</option>
+					</select>
+				</h2>
+
+				<!-- /h2 'show statistics for' -->
+			</div>
+			<!-- /.col-md-12 (filter-header) -->
+		</div>
+		<!-- /.row (filter-header) -->
+		<!-- .row (delays-header)-->
+		<div class="row top-buffer statistic-graphs">
+			<div class="col-md-12 col-xs-12 col-lg-12 title">
+				<h2>
+					<i class="fa fa-clock-o" aria-hidden="true" style="color:rgb(191,41,41);"></i>
+					Vertraging
+				</h2>
+			</div>
+		</div>
+		<!-- /.row -->
+		<!-- .row (delays-graph) -->
+		<div class="row">
+			<div class="col-md-9 col-xs-9 col-lg-9">
+				<div class="ct-chart-delays" style="height:200px;"></div>
+			</div>
+			<div class="col-md-3 col-xs-3 col-lg-3">
+				<p class="graph-detail">
+					Nu: <strong>25 treinen</strong> met in totaal <strong>204 minuten</strong> vertraging.
+				</p>
+				<p class="graph-detail">
+					<strong>3</strong> afschaffingen.
+				</p>
+			</div>
+		</div>
+		<!-- /.row (delays-graph)-->
+
+
+		<!-- /.row -->
+		<div class="row top-buffer statistic-graphs">
+			<div class="col-md-12 col-xs-12 col-lg-12 title">
+				<h2>
+					<i class="fa fa fa-users" aria-hidden="true" style="color:rgb(191,41,41);"></i>
+					Drukte
+				</h2>
+			</div>
+		</div>
+		<!-- /.row -->
+		<!-- .row -->
+		<div class="row">
+			<div class="col-md-9 col-xs-9 col-lg-9">
+				<div class="ct-chart-occupancy" style="height:200px;"></div>
+			</div>
+			<div class="col-md-3 col-xs-3 col-lg-3">
+				<p class="graph-detail">
+					Nu: <strong>12 drukke treinen</strong>
+					waarvan <strong>3 overbezet</strong>
+				</p>
+			</div>
+		</div>
+		<!-- /.row-->
+
+
+				<!-- /.row -->
+		<div class="row top-buffer statistic-graphs">
+			<div class="col-md-12 col-xs-12 col-lg-12 title">
+				<h2>
+					<i class="fa fa-exclamation-triangle" aria-hidden="true" style="color:rgb(191,41,41);"></i>Incidenten
+				</h2>
+			</div>
+		</div>
+		<!-- /.row -->
+		<!-- .row -->
+		<div class="row">
+			<div class="col-md-9 col-xs-9 col-lg-9">
+				<div class="ct-chart-incidents" style="height:200px;"></div>
+			</div>
+			<div class="col-md-3 col-xs-3 col-lg-3">
+				<div class="col-md-2 col-lg-2 col-xs-5 graph-detail">
+					<a href="#" style="display:inline-block; color:rgb(191,41,41);">
+						<i class="fa fa-bar-chart"></i>
+					</a>
+					<a href="#" style="display:inline-block; color:rgb(191,41,41);">
+						<i class="fa fa-bars"></i>
+					</a>
+				</div>
+				<div class="col-md-10 col-lg-10 col-xs-7">
+					Nu: <strong>5 incidenten</strong>
+				</div>
+			</div>
+		</div>
+		<!-- /.row-->
+
+
+	</div>
+	<!-- /.container-fluid -->
+
+	<!-- Javascript -->
+	<script type="text/javascript" src="assets/js/main.js"></script>
+</body>
+</html>

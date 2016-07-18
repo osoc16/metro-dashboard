@@ -1,0 +1,76 @@
+/**
+* Styles for Metrodashboard
+* @author Serkan Yildiz (c) Open Knowledge Belgium
+* @license MIT
+*/ 
+
+/**
+* Site headers
+*/
+.site-header
+{
+	background:rgb(191,41,41);
+	width:100%;
+	height:10%;
+}
+
+.site-header h1
+{
+	color:#FFFFFF;
+	font-family:'PT Sans', sans-serif;
+	font-weight:700;
+	text-transform: uppercase;
+}
+
+.filter-header h2
+{
+	color:#000000;
+	font-family:'PT Sans', sans-serif;
+	font-weight:700;
+}
+
+.statistic-graphs .title h2
+{
+	font-family:'PT Sans', sans-serif;
+	color:#000000;
+	font-weight:700;
+}
+
+/**
+* Icons
+*/
+i.icon 
+{
+	display:inline-block;
+}
+
+i.barometer-icon
+{
+	background:url(../../assets/img/rsz_spoorbarometer-icon.png);
+	width:9px;
+	height:26px;
+	margin-right:0.4%;
+}
+
+i.today-icon
+{
+	background:url(../../assets/img/xxx.png);
+	width:10px;
+	height:20px;
+}
+
+/**
+* Utility css classes (empty row etc)
+*/ 
+
+.top-buffer
+{
+	margin-top:2%;
+}
+
+.graph-detail
+{
+	font-family:'PT Sans', sans-serif;
+	font-size:1.5em;
+	color:#000000;
+}
