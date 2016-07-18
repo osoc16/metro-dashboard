@@ -32,7 +32,7 @@
 			<!-- .col-md-12 -->
 			<div class="col-md-12 col-xs-12 col-lg-12 site-header">
 				<!-- .barometer-icon -->
-				<h1><i class="icon barometer-icon"></i>Spoorbarometer</h1>
+				<h1><i class="icon barometer-icon"></i>Rail barometer</h1>
 				<!-- /.barometer-icon -->
 			</div>
 			<!-- /.col-md-12 -->
@@ -44,11 +44,11 @@
 			<div class="col-md-12 col-xs-12 col-lg-12 filter-header">
 				<!-- h2 'show statistics for' -->
 				<h2>
-					Toon statistieken voor 
+					Show statistics for  
 					<select name="filter-form">
-						<option value="today">vandaag</option>
-						<option value="week">afgelopen 7 dagen</option>
-						<option value="month">afgelopen maand</option>
+						<option value="today">today</option>
+						<option value="week">last week</option>
+						<option value="month">last month</option>
 					</select>
 				</h2>
 
@@ -62,7 +62,7 @@
 			<div class="col-md-12 col-xs-12 col-lg-12 title">
 				<h2>
 					<i class="fa fa-clock-o" aria-hidden="true" style="color:rgb(191,41,41);"></i>
-					Vertraging
+					Delay
 				</h2>
 			</div>
 		</div>
@@ -76,8 +76,8 @@
 						<thead>
 							<tr>
 								<th>#</th>
-								<th>Trein</th>
-								<th>Vertraging</th>
+								<th>Train</th>
+								<th>Delay</th>
 							</tr>
 						</thead>
 						<tbody>
@@ -115,10 +115,10 @@
 					</a>
 				</div>
 				<div class="col-md-10 col-lg-10 col-xs-7">
-					Nu: <strong>25 treinen</strong> met in totaal 
-					<strong>204 minuten</strong> vertraging.
+					Now: <strong>25 trains</strong> with
+					<strong>204 minutes</strong> delay in total.
 					<br/>
-					<strong>3 </strong>afschaffingen.
+					<strong>3 </strong>cancellations.
 				</div>
 			</div>
 		</div>
@@ -130,7 +130,7 @@
 			<div class="col-md-12 col-xs-12 col-lg-12 title">
 				<h2>
 					<i class="fa fa fa-users" aria-hidden="true" style="color:rgb(191,41,41);"></i>
-					Drukte
+					Occupancy
 				</h2>
 			</div>
 		</div>
@@ -144,7 +144,7 @@
 						<thead>
 							<tr>
 								<th>#</th>
-								<th>Trein</th>
+								<th>Train</th>
 								<th>Occupancy</th>
 							</tr>
 						</thead>
@@ -168,7 +168,7 @@
 					</a>
 				</div>
 				<div class="col-md-10 col-lg-10 col-xs-7">
-					Nu: <strong>25 drukke treinen</strong> waarvan <strong>3 overbezet</strong>.
+					Now: <strong>12 busy trains</strong> of which <strong>3 overcrowded</strong>.
 				</div>
 			</div>
 		</div>
@@ -179,7 +179,7 @@
 		<div class="row top-buffer statistic-graphs">
 			<div class="col-md-12 col-xs-12 col-lg-12 title">
 				<h2>
-					<i class="fa fa-exclamation-triangle" aria-hidden="true" style="color:rgb(191,41,41);"></i>Incidenten
+					<i class="fa fa-exclamation-triangle" aria-hidden="true" style="color:rgb(191,41,41);"></i>Incidents
 				</h2>
 			</div>
 		</div>
@@ -193,15 +193,15 @@
 						<thead>
 							<tr>
 								<th>#</th>
-								<th>Trein</th>
-								<th>Tijd</th>
+								<th>Incident</th>
+								<th>Since</th>
 							</tr>
 						</thead>
 						<tbody>
 							<tr>
 								<td>1</td>
-								<td>?</td>
-								<td>?</td>
+								<td>Ghlin - Bergen: signalling problem</td>
+								<td class="red">9h015</td>
 							</tr>
 						</tbody>
 					</table>
@@ -217,7 +217,7 @@
 					</a>
 				</div>
 				<div class="col-md-10 col-lg-10 col-xs-7">
-					Nu: <strong>5 incidenten</strong>
+					Now: <strong>1 incident</strong>
 				</div>
 			</div>
 		</div>
