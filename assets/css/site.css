@@ -106,3 +106,27 @@ i.today-icon
 	font-size:1.5em;
 	color:#000000;
 }
+
+
+.table-detail
+{
+	display:none;
+	font-family:'PT Sans', sans-serif;
+}
+
+.table-detail table
+{
+	width:100%;
+}
+
+.table-detail > table > thead
+{
+	background:rgb(191,41,41);
+	color:#FFFFFF;
+	font-weight: 700;
+}
+
+.table-detail > table > tbody > tr
+{
+	border-bottom: 1px solid #E0E0E0;
+}

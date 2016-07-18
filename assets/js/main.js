@@ -48,5 +48,30 @@ $(document).ready(function()
 
 $('select[name=filter-form]').change(function(){
 	var $selectedValue = $('select[name=filter-form] option:selected').val()
-	console.log($selectedValue);
+	// TODO: Get data with selected value
+});
+
+
+$('a.chart').on('click', function(event){
+	event.preventDefault();
+
+	var $element = $(this);
+
+	var $toHide = $element.parent().parent().parent().find('div.list');
+	var $toShow = $element.parent().parent().parent().find('div.chart');
+
+	$toHide.hide();
+	$toShow.show();
+})
+
+$('a.list').on('click', function(event){
+	event.preventDefault();
+
+	var $element = $(this);
+
+	var $toHide = $element.parent().parent().parent().find('div.chart');
+	var $toShow = $element.parent().parent().parent().find('div.list');
+
+	$toHide.hide();
+	$toShow.show();
 });
