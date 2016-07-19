@@ -44,7 +44,7 @@ i.icon
 	display:inline-block;
 }
 
-i.barometer-icon
+i.icon-barometer
 {
 	background:url(../../assets/img/rsz_spoorbarometer-icon.png);
 	width:9px;
@@ -52,13 +52,36 @@ i.barometer-icon
 	margin-right:0.4%;
 }
 
-i.today-icon
+i.icon-crowding
 {
-	background:url(../../assets/img/xxx.png);
-	width:10px;
-	height:20px;
+	background:url(../../assets/img/crowding-icon-32.png);
+	width:32px;
+	height:32px;
 }
 
+i.icon-delay
+{
+	background:url(../../assets/img/delay-icon-32.png);
+	width:29px;
+	height: 32px;
+}
+
+i.icon-incident
+{
+	background:url(../../assets/img/incident-icon-32.png);
+	width:38px;
+	height:32px;
+}
+
+/**
+* Graph styles
+*/
+.graph-detail
+{
+	font-family:'PT Sans', sans-serif;
+	font-size:3.5vh;
+	color:#000000;
+}
 .graph-detail a.chart
 {
 	display:inline-block;
@@ -88,23 +111,6 @@ i.today-icon
 {
 	color:#FFFFFF;
 	background:rgb(191,41,41);
-}
-
-
-/**
-* Utility css classes (empty row etc)
-*/ 
-
-.top-buffer
-{
-	margin-top:2%;
-}
-
-.graph-detail
-{
-	font-family:'PT Sans', sans-serif;
-	font-size:3.5vh;
-	color:#000000;
 }
 
 
@@ -148,3 +154,15 @@ i.today-icon
 	background:rgb(191,41,41);
 	color:#FFFFFF !important;
 }
+
+
+
+/**
+* Utility css classes (empty row etc)
+*/ 
+
+.top-buffer
+{
+	margin-top:2%;
+}
+
