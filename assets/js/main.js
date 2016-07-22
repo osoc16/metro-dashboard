@@ -52,8 +52,8 @@ $('select[name=filter-form]').change(function(){
 });
 
 
-$('a.chart').on('click', function(event){
-	event.preventDefault();
+$('a.chart').on('click', function(e){
+	e.preventDefault();
 
 	var $element = $(this);
 
@@ -68,8 +68,8 @@ $('a.chart').on('click', function(event){
 	$element.parent().find('a.list').removeClass('selected-view');
 })
 
-$('a.list').on('click', function(event){
-	event.preventDefault();
+$('a.list').on('click', function(e){
+	e.preventDefault();
 
 	var $element = $(this);
 
