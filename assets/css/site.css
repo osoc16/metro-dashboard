@@ -106,11 +106,13 @@ i.icon-incident
 	padding-left:10px;
 	padding-right: 10px;
 	color:rgb(191,41,41);
+	border:1px solid;
 }
 .graph-detail a.list:hover
 {
 	color:#FFFFFF;
 	background:rgb(191,41,41);
+	border:1px solid rgb(191,41,41);
 }
 
 
@@ -153,6 +155,7 @@ i.icon-incident
 {
 	background:rgb(191,41,41);
 	color:#FFFFFF !important;
+	border:1px solid rgb(191,41,41);
 }
 
 
@@ -166,3 +169,11 @@ i.icon-incident
 	margin-top:2%;
 }
 
+/**
+* Chart styling
+*/
+
+.ct-label
+{
+    font-size:1em;
+}
