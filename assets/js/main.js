@@ -9,35 +9,71 @@ $(document).ready(function()
 	/**
 	* Chart stuff
 	*/
+
 	new Chartist.Line('.ct-chart-delays', {
 	  labels: [1, 2, 3, 4, 5, 6, 7, 8],
 	  series: [
-	    [5, 9, 7, 8, 5, 3, 5, 4]
+	    [
+	    { meta: "5", value:5 },
+	    { meta: "9", value:9 },
+	    { meta: "7", value:7 },
+	    { meta: "8", value:8 },
+	    { meta: "5", value:5 },
+	    { meta: "3", value:3 },
+	    { meta: "5", value:5 },
+	    { meta: "4", value:4 }
+	    ]
 	  ]
 	}, {
 	  low: 0,
-	  showArea: true
-	});
-
-
-	new Chartist.Line('.ct-chart-occupancy', {
-	  labels: [1, 2, 3, 4, 5, 6, 7, 8],
-	  series: [
-	    [5, 9, 7, 8, 5, 3, 5, 4]
-	  ]
-	}, {
-	  low: 0,
-	  showArea: true
+	  showArea: true,
+	  plugins: [
+    	Chartist.plugins.tooltip()
+  		]
 	});
 
 	new Chartist.Line('.ct-chart-incidents', {
 	  labels: [1, 2, 3, 4, 5, 6, 7, 8],
 	  series: [
-	    [5, 9, 7, 8, 5, 3, 5, 4]
+	    [
+	    { meta: "5", value:5 },
+	    { meta: "9", value:9 },
+	    { meta: "7", value:7 },
+	    { meta: "8", value:8 },
+	    { meta: "5", value:5 },
+	    { meta: "3", value:3 },
+	    { meta: "5", value:5 },
+	    { meta: "4", value:4 }
+	    ]
 	  ]
 	}, {
 	  low: 0,
-	  showArea: true
+	  showArea: true,
+	  plugins: [
+    	Chartist.plugins.tooltip()
+  		]
+	});
+
+	new Chartist.Line('.ct-chart-occupancy', {
+	  labels: [1, 2, 3, 4, 5, 6, 7, 8],
+	  series: [
+	    [
+	    { meta: "5", value:5 },
+	    { meta: "9", value:9 },
+	    { meta: "7", value:7 },
+	    { meta: "8", value:8 },
+	    { meta: "5", value:5 },
+	    { meta: "3", value:3 },
+	    { meta: "5", value:5 },
+	    { meta: "4", value:4 }
+	    ]
+	  ]
+	}, {
+	  low: 0,
+	  showArea: true,
+	  plugins: [
+    	Chartist.plugins.tooltip()
+  		]
 	});
 });
 
